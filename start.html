@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Op, func, if/else</title>
+    <script>
+      function starten() {
+        var eerste; // declaratie
+        eerste = 25;
+        eerste = "maandag";
+        // alert(eerste); // in de alert
+        console.log(eerste); // staat in de console
+        var tweede = 5;
+        var derde = 5;
+        console.log(tweede);
+        // operators:
+        // + - * /  ** %
+        // < > <= >= == != !    ===
+        // ||or &&and
+        // ++ -- += -= /=
+        // | & << >> (doen berekeningen bitwise; het is een binaire berekening GEEEn logische)
+        // operator kan concateneren aka strings achter elkaar plakken
+
+        // short curcuited is bij && || dat ie eerst de linkerkant bekijkt;
+        // als die dan niet voldoet aan de vergelijking gaat ie niet meer naar de rechterkant
+
+        if (2 > 1) {
+          console.log("hoi");
+        } else {
+          console.log("doei");
+        }
+        hiergaanwe(6); // argument
+        hiergaanwe(55);
+        oei(1, 2, 3);
+      }
+
+      function oei(aaa, bbb, ccc) {
+        console.log("oei" + aaa);
+      }
+
+      function hiergaanwe(getal) {
+        // hiergaanwe = naamv van functie
+        alert("in hier gaan we: " + getal); // getal = parameter
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Klik hier" onclick="starten()" />
+    <input type="radio" />
+    <input type="check" />
+  </body>
+</html>

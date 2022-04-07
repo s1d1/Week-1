@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start2</title>
+    <script>
+      //   function gaan();{
+      //     var uitkomst = nogiets();    // de aanroep van een functie mag vervangen worden door dat wat ie returned
+      //     console.log(nogiet() * nogiets());
+      //   }
+      //   function nogiets(){
+      //     var twee = 2
+      //     return twee
+      //   }
+      var aantalkliks = 0;
+      function array() {
+        var getallen = [55, 44, 12, 17, 8];
+        console.log(getallen[2]);
+        getallen[4] = 35;
+        console.log(getallen[4]);
+
+        for (var x = 0; x < getallen.length; x++) {
+          console.log(getallen[x]);
+        }
+        var testscope = 25;
+        detweede();
+      }
+
+      function detweede() {
+        console.log(aantalkliks++);
+      }
+
+      function gaan() {
+        detweede();
+      }
+
+      // 1 soms is een getal een string
+      // 2 in een antwoord mag html zitten concateneren
+      // 3 met += komt het erbij
+
+      function nogiets() {
+        var denaam = document.getElementById("invoerveld").value;
+        var hetgetal = parseInt(denaam);
+        document.getElementById("uitvoer").innerHTML =
+          "<h1>" + hetgetal + "</h1>";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="gaan()" value="klik hier" />
+    <input type="text" id="invoerveld" />
+    <div id="uitvoer"></div>
+  </body>
+</html>
